@@ -20,8 +20,14 @@ Much googling went in to making this work....
 I created individual var elemnts for each possible outcome with the password (lower case, upper case, numbers, characters).  After that I created the for loop to make it all happen (with much googling and frustration).  Each of the individual promts were easy to define and no struggle.  It took help from the TA's to understand why my generator was not generating correctly at the end though.  I needed to add a + sign in my  randomPassword = base[Math.floor(Math.random() * base.length)]; to make it  randomPassword += base[Math.floor(Math.random() * base.length)];.  Without the + it was only showing one character generation at the end.  
 
 SCREENSHOTS:
+
 https://github.com/hadleyc15/password-generator/issues/1#issue-619526212
 
 https://github.com/hadleyc15/password-generator/issues/2#issue-619526483
 
 https://github.com/hadleyc15/password-generator/issues/3#issue-619526630
+
+Deployed URL:
+
+https://hadleyc15.github.io/password-generator/
+
