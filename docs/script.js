@@ -19,6 +19,22 @@ var buttonPassword = function () {
     base = base.concat(lowercase);
   }
 
+  var upper = confirm("Would you like to use capital letters in your password?");
+  if (upper === true) {
+    base = base.concat(uppercase);
+  }
+
+  var numberspromt = confirm("Would you like to use numbers in your password?");
+  if (numberspromt === true) {
+    base = base.concat(numbers);
+  }
+
+  var specialchar = confirm("Would you like to use special characters in your password?");
+  if (specialchar === true) {
+    base = base.concat(special);
+  }
+}
+
 // Write password to the #password input
 var passwordButton = document.querySelector("password");
 var generateBtn = document.querySelector("#generate");
@@ -34,13 +50,11 @@ function writePassword() {
 
   passwordText.value = password;
 
-
-  function generatePassword() {
-    var randomPassword = "";
-    for (var i = 0; i < Characters; i++) {
-      randomPassword += base[Math.floor(Math.random() * base.length)]; 
-    }
-    return (randomPassword);
+function generatePassword() {
+  var randomPassword = "";
+  for (var i = 0; i < Characters; i++) {
+    randomPassword = base[Math.floor(Math.random() * base.length)]; 
   }
-}
+  return (randomPassword);
+  }
 }
