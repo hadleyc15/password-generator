@@ -53,7 +53,7 @@ function writePassword() {
 function generatePassword() {
   var randomPassword = "";
   for (var i = 0; i < Characters; i++) {
-    randomPassword = base[Math.floor(Math.random() * base.length)]; 
+    randomPassword += base[Math.floor(Math.random() * base.length)]; 
   }
   return (randomPassword);
   }
