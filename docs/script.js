@@ -14,6 +14,10 @@ var buttonPassword = function () {
   while (isNaN(Characters) || Characters < 8 || Characters > 128) Characters = Number(
     prompt("You password must contain 8-128 characters...How many characters would you like in your password?"));
 
+    var lower = confirm("Would you like to use lowercase letters in your password?");
+  if (lower === true) {
+    base = base.concat(lowercase);
+  }
 
 // Write password to the #password input
 var passwordButton = document.querySelector("password");
